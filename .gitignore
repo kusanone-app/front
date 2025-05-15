@@ -13,3 +13,32 @@ report.[0-9]*.[0-9]*.[0-9]*.json
 # Runtime data
 pids
 *.pid
+*.seed
+*.pid.lock
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Optional Vite cache
+.vite/
+
+# Environment files
+.env*
+!.env.example
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS-specific files
+.DS_Store
+Thumbs.db
