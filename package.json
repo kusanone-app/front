@@ -1,0 +1,26 @@
+{
+  "name": "kusanone",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "dayjs": "^1.11.13",
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "leaflet": "^1.9.4",
+    "leaflet.markercluster": "^1.5.3",
+    "mysql2": "^3.14.1",
+    "preact": "^10.26.5",
+    "wouter": "^2.11.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.1",
+    "vite": "^6.3.5"
+  }
+}

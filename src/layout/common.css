@@ -1,0 +1,195 @@
+/* ============================
+   基本レイアウトと全体設定
+============================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'M PLUS Rounded 1c', 'Hiragino Kaku Gothic ProN', sans-serif;
+  background-color: #f9f9f9;
+}
+
+main {
+  padding: 10px;
+  height: calc(100vh - 70px);
+  overflow: auto;
+}
+
+/* ============================
+   ヘッダー・ナビゲーション
+============================= */
+.header {
+  background-color: #e6006e;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.nav-with-segment,
+.common-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.segment {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.segment-item {
+  padding: 4px 8px;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.segment-item.active {
+  background-color: white;
+  color: #e6006e;
+}
+
+.segment-divider,
+.segment-divider {
+  margin: 0 4px;
+  color: white;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ============================
+   ボタンスタイル
+============================= */
+.pink-button {
+  background: #e6006e;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pink-button:hover {
+  background: #c4005e;
+}
+
+.normal-button {
+  background: #e5e7eb;
+  color: #1f2937;
+  font-size: 14px;
+  padding: 4px 8px;
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.normal-button:hover {
+  background: #d1d5db;
+}
+
+/* ============================
+   入力フィールド・フォーム
+============================= */
+input[type="text"],
+input[type="time"],
+input[type="date"],
+input[type="file"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  background: white;
+  font-size: 14px;
+}
+
+input.narrow,
+.input-narrow {
+  width: auto;
+  min-width: 100px;
+  max-width: 300px;
+}
+
+/* ============================
+   その他補助スタイル
+============================= */
+small {
+  display: block;
+  color: #888;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+label.inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+#activity-map {
+  height: calc(100vh - 70px);
+  width: 100%;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 4px 6px;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 6px 12px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: white;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-item.active {
+  background: white;
+  color: #e6006e;
+}
